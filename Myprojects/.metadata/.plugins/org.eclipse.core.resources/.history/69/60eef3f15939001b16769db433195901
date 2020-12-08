@@ -1,0 +1,11 @@
+package com.ssdp.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.ssdp.repository.PaymentMethodRepo;
+
+public class PaymentService {
+	@Autowired
+	PaymentMethodRepo paymentMethodRepo;
+
+}

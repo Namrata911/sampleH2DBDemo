@@ -1,0 +1,28 @@
+package com.ssdp.service;
+
+import org.mapstruct.factory.Mappers;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.ssdp.dto.PaymentMethodDTO;
+import com.ssdp.entity.PaymentMethod;
+import com.ssdp.mapper.PaymentMethodMapper;
+import com.ssdp.repository.PaymentMethodRepo;
+
+public class PaymentService {
+	@Autowired
+	PaymentMethodRepo paymentMethodRepo;
+	
+	public PaymentMethod addPaymentMethod(PaymentMethodDTO paymentMethodDTO){
+		PaymentMethodMapper mapper = Mappers.getMapper(PaymentMethodMapper.class);
+		PaymentMethod paymentMethod = mapper.dtoToEntity(paymentMethodDTO);
+		return paymentMethodRepo.save(paymentMethod);
+		
+	}
+	
+	public  void deletePaymentMethod(int id) {
+		
+		return paymentMethodRepo.deleteById(id);
+		
+	}
+
+}

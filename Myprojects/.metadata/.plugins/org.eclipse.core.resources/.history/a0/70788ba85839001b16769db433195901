@@ -1,0 +1,7 @@
+package com.ssdp.mapper;
+
+import java.io.Serializable;
+
+public interface PaymentMethodMapper extends Serializable {
+
+}

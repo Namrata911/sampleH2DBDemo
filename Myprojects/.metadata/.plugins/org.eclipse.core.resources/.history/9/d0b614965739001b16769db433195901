@@ -1,0 +1,5 @@
+package com.ssdp.dto;
+
+public class PaymentMethodDTO {
+
+}

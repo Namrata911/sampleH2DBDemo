@@ -1,0 +1,11 @@
+package com.ssdp.entity;
+
+import lombok.*;
+
+@Getter @Setter @NoArgsConstructor
+public class PaymentMethod {
+	
+	int id;
+	String method;
+
+}

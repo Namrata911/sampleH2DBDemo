@@ -1,0 +1,9 @@
+package com.ssdp.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.ssdp.entity.PaymentMethod;
+
+public interface PaymentMethodRepo extends JpaRepository<PaymentMethod, Integer> {
+
+}

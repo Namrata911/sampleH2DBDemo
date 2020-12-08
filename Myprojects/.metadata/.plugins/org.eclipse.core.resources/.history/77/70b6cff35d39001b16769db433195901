@@ -1,0 +1,17 @@
+package com.ssdp.entity;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+import lombok.*;
+
+@Getter @Setter @NoArgsConstructor
+public class PaymentMethod {
+	
+	@Id
+	@GeneratedValue(strategy= GenerationType.IDENTITY)
+	int id;
+	String method;
+
+}
